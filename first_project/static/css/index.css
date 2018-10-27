@@ -1,0 +1,12 @@
+body{
+  background: linear-gradient(55deg, #0267d3 30%, #02d0d3);
+  align: center;
+  text-align: center;
+  /* height: 1200px; */
+}
+table {
+    border-collapse: collapse;
+}
+table, th, td {
+   border: 10px solid red !important;
+}

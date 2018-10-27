@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+{% load staticfiles %}
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>My first Django project!</title>
+    <link rel="shortcut icon" href="https://www.sambicstech.com/wp-content/uploads/2017/11/django.png">
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+  </head>
+  <body>
+    <div class="container" style="background-color: rgba(255, 255, 255, 0.6)">
+      <h1>This is the index.html page</h1>
+      <hr>
+      <h3>{{ INSERT_TEXT }}</h3>
+      <button onclick="window.open('first_app/')">Go to first app!</button>
+    </div>
+    <div class="django-data" style="margin-top: 30px; margin-bottom: 10px; background-color: rgba(255, 255, 255, 0.6)">
+      <h2>Here are the records:</h2>
+      <hr style="width: 80%;">
+      {% if access_records %}
+        <table style="text-align: justify; margin-top: 30px; padding-bottom: 30px; margin-left: 40%; border: 2px solid black; border-collapse: collapse;">
+          <thead style="border: 2px solid black; border-collapse: collapse;">
+            <th style="border: 2px solid black; border-collapse: collapse;">Webpage Name</th>
+            <th>Date Accessed</th>
+          </thead>
+          {% for acc in access_records %}
+          <tr style="border: 2px solid black; border-collapse: collapse;">
+            <td style="border: 2px solid black; border-collapse: collapse;">{{ acc.name }}</td>
+            <td>{{ acc.date }}</td>
+          </tr>
+          {% endfor %}
+        </table>
+      {% else %}
+        <p>NO ACCESS RECORDS FOUND!</p>
+      {% endif %}
+    </div>
+    <img src="{% static 'images/download.jpg' %}" alt="Error!" style="margin-top: 30px; width: 70%; margin-bottom: 50px;">
+  </body>
+</html>
