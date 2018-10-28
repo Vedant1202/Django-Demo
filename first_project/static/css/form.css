@@ -1,0 +1,18 @@
+body{
+  /* background: linear-gradient(55deg, #2c2e38 30%, #58595e); */
+  background-image: url("https://s-media-cache-ak0.pinimg.com/originals/30/a1/27/30a1273dc2d3c6e4de7224ad6e7a78a2.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  align: center;
+  text-align: center;
+  height: 800px;
+  color: white;
+}
+.jumbotron{
+  background-color: rgba(0, 0, 0, 0.6) !important;
+  text-align: center;
+  color: white;
+  margin-top: 30px;
+}

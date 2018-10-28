@@ -8,13 +8,17 @@
     <title>My first Django project!</title>
     <link rel="shortcut icon" href="https://www.sambicstech.com/wp-content/uploads/2017/11/django.png">
     <link rel="stylesheet" href="{% static 'css/index.css' %}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous">
   </head>
   <body>
     <div class="container" style="background-color: rgba(255, 255, 255, 0.6)">
       <h1>This is the index.html page</h1>
       <hr>
       <h3>{{ INSERT_TEXT }}</h3>
-      <button onclick="window.open('first_app/')">Go to first app!</button>
+      <button class="btn btn-warning" onclick="window.open('first_app/')">Go to first app!</button>
+      <a class="btn btn-dark" href="/form">Got to form Page</a>
     </div>
     <div class="django-data" style="margin-top: 30px; margin-bottom: 10px; background-color: rgba(255, 255, 255, 0.6)">
       <h2>Here are the records:</h2>

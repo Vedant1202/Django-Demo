@@ -22,6 +22,7 @@ STATIC_DIR = os.path.join(BASE_DIR, "static")
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'bb9mv31vv4d+3ugt8q4ew4&@z-_*($$t6co(46ha!x7wog=^94'
+# os.environ.get('DJANGOSECRETDEMO')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
