@@ -22,7 +22,9 @@ class FormName(forms.Form):
 
 
 
-
+    ## THIS BLOCK OF CODE HAS BEEN COMMENTED AND SERVES NO PUPOSE
+    ## RIGHT NOW. IT EXISTS JUST FOR PERSONAL REFERENCE.
+    
     ##=============================================================
                         # CUSTOM VAILDATOR EXAMPLES
     ##=============================================================
